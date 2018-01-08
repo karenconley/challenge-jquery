@@ -6,13 +6,11 @@ $(document).ready(function(){
 	printNews();
 });
 
-//ETAPA 2
+
+//ETAPA 2:
 function printNews() {
     $('.callout-news > p').text('NUEVAS RECETAS');
 }
-
-
-
 
 
 /*
@@ -20,20 +18,27 @@ function printNews() {
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+    for(var i = 0; i < recipesArray.length; i++){
+        if (recipesArray[i].highlighted == true){
+            renderRecipe(recipesArray[i]);
+        }
+    }
+
 	console.log('Recipes: ', recipesArray);
 }
 
 /*
-* Función que se encarga de pintar UNA recetas que tenga 
+* Función que se encarga de pintar UNA recetas que tenga
 * marcado el atributo "highlighted" como TRUE
-* Aqui se tiene que crear el HTML que esta en el 
+* Aqui se tiene que crear el HTML que esta en el
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
-
+/*arreglo recipesArray
+/*highlighted​
 
 /*
 * Función que se encarga de pintar todas las actividades
