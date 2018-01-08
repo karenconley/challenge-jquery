@@ -1,13 +1,15 @@
-$(document).ready( function(){
+$(document).ready(function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	//Esconder botón flecha:
 	renderHighlightedRecipes(recipesArray);
+	$('.js-back').remove();
 
 });
 
 
 /*
-* Función que se encarga de pintar TODAS las recetas que tengan 
+* Función que se encarga de pintar TODAS las recetas que tengan
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
