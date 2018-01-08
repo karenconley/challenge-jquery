@@ -1,11 +1,18 @@
 $(document).ready(function(){
-
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	//Esconder botón flecha:
-	renderHighlightedRecipes(recipesArray);
 	$('.js-back').remove();
-
+	renderHighlightedRecipes(recipesArray);
+	printNews();
 });
+
+//ETAPA 2
+function printNews() {
+    $('.callout-news > p').text('NUEVAS RECETAS');
+}
+
+
+
 
 
 /*
