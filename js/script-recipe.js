@@ -3,3 +3,4 @@ $(document).ready(function(){
 	$('.icon-menu').remove();
 
 });
+
